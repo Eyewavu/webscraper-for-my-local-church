@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "rollup -c && uglifyjs -c -m -e --verbose -o ./build/bundle.min.js -- ./build/bundle.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.1",
+    "uglify-js": "^3.16.3"
+  }
+}
