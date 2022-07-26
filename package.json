@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "rollup -c && uglifyjs -c -m -e --verbose -o ./build/bundle.min.js -- ./build/bundle.js"
+    "build": "rollup -c && uglifyjs -c -m -e --verbose -o ./build/bundle.min.js -- ./build/bundle.js",
+    "start": "node ./build/bundle.min.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
